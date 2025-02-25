@@ -76,7 +76,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Trang chủ</a>
+                    <a href="index.html" class="nav-link">Trang chủ</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="https://ctuet.edu.vn" class="nav-link">Liên hệ</a>
@@ -115,7 +115,7 @@
 
         <aside class="main-sidebar sidebar-dark-primary elevation-0">
             <!-- Brand Logo -->
-            <a href="trang_chu.html" class="brand-link">
+            <a href="index.html" class="brand-link">
                 <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/12/Artboard-3.png" alt="logo CTUT"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">CTUT|Khảo sát</span>
@@ -129,20 +129,20 @@
                         data-accordion="false" style="color: white" id="sidebar">
 
                         <li class="nav-item">
-                            <a href="trang_chu.html" class="nav-link">
+                            <a href="index.html" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>Trang chủ</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>Danh mục Khoa<i class="right fas fa-angle-left"></i></p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
+                                    <a href="trang_chu.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tất cả khảo sát</p>
                                     </a>
@@ -260,388 +260,164 @@
         <div class="content-wrapper" style="min-height: 1302.12px;">
             <section class="content">
                 <div class="container-fluid">
-
-
-                    <div class="content-header" style="height: fit-content;padding:0;margin-right:10px;margin-bottom:0">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <h1 class="m-0">Dashboard</h1>
-                            </div><!-- /.col -->
-                            <div class="col-sm-6">
-                                <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="#">Trang chủ </a></li>
-                                    <li class="breadcrumb-item" id='level1'></li>
-                                    <li class="breadcrumb-item active" id='level2'></li>
-                                </ol>
-                            </div><!-- /.col -->
-                        </div><!-- /.row -->
-
+                    <div class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-sm-12 col-md-6">
+                                    <h1 class="m-0 text-wrap">Trang chủ</h1>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <ol class="breadcrumb float-sm-right">
+                                        <li class="breadcrumb-item active">Trang chủ</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="loadpage"></div>
 
-                            <!-- Danh sách khảo sát -->
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/assets/imgs/download.jpg" class="d-block w-100" alt="CTUT Image 1"
+                                            style="height: 400px; object-fit: cover;">
+                                    </div>
+                                    <!-- <div class="carousel-item">
+                                        <img src="/assets/imgs/1.jpg" class="d-block w-100" alt="CTUT Image 2"
+                                            style="height: 400px; object-fit: cover;">
+                                    </div> -->
+                                    <!-- <div class="carousel-item">
+                                        <img src="/assets/imgs/GLpLPfaboAAXYGe.png" class="d-block w-100" alt="CTUT Image 3" style="height: 400px; object-fit: cover;">
+                                    </div> -->
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="welcome-message text-center mb-4">Chào mừng bạn đến với Hệ thống Khảo sát
+                                        Sinh viên CTUT!</h4>
+                                    <p class="text-center">Hãy đóng góp ý kiến của bạn để giúp chúng tôi cải thiện chất
+                                        lượng đào tạo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h3 class="card-title">Khảo sát đang diễn ra</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">Khảo sát chất lượng giảng dạy học kỳ 1</h5>
+                                                <small class="text-danger">Còn 5 ngày</small>
+                                            </div>
+                                            <p class="mb-1">Đánh giá chất lượng giảng dạy của giảng viên</p>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">Khảo sát cơ sở vật chất</h5>
+                                                <small class="text-danger">Còn 7 ngày</small>
+                                            </div>
+                                            <p class="mb-1">Đánh giá về cơ sở vật chất của trường</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h3 class="card-title">Thông báo mới</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="timeline timeline-inverse">
+                                        <div class="time-label">
+                                            <span class="bg-info">10/12/2023</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-envelope bg-primary"></i>
+                                            <div class="timeline-item">
+                                                <h3 class="timeline-header">Khảo sát mới đã được phát hành</h3>
+                                                <div class="timeline-body">
+                                                    Vui lòng tham gia khảo sát chất lượng giảng dạy học kỳ 1
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-clock bg-gray"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Danh sách khảo sát</h3>
+                                    <h3 class="card-title">Hướng dẫn nhanh</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát chất lượng giảng dạy học kỳ 1</h5>
-                                                    <p class="card-text">Thời gian: 01/01/2024 - 15/01/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal1">Thực hiện khảo sát</a>
-                                                    </div>
+                                        <div class="col-md-4">
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-info"><i
+                                                        class="fas fa-clipboard-list"></i></span>
+                                                <div class="info-box-content">
+                                                    <h5>Bước 1</h5>
+                                                    <p>Chọn khảo sát cần tham gia</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát cơ sở vật chất phòng học</h5>
-                                                    <p class="card-text">Thời gian: 05/01/2024 - 20/01/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal2">Thực hiện khảo sát</a>
-                                                    </div>
+                                        <div class="col-md-4">
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-success"><i
+                                                        class="fas fa-edit"></i></span>
+                                                <div class="info-box-content">
+                                                    <h5>Bước 2</h5>
+                                                    <p>Trả lời các câu hỏi khảo sát</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát hoạt động ngoại khóa</h5>
-                                                    <p class="card-text">Thời gian: 10/01/2024 - 25/01/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal3">Thực hiện khảo sát</a>
-                                                    </div>
+                                        <div class="col-md-4">
+                                            <div class="info-box">
+                                                <span class="info-box-icon bg-warning"><i
+                                                        class="fas fa-check-circle"></i></span>
+                                                <div class="info-box-content">
+                                                    <h5>Bước 3</h5>
+                                                    <p>Gửi kết quả khảo sát</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát dịch vụ thư viện</h5>
-                                                    <p class="card-text">Thời gian: 15/01/2024 - 30/01/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal4">Thực hiện khảo sát</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát chất lượng căng tin</h5>
-                                                    <p class="card-text">Thời gian: 20/01/2024 - 05/02/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal5">Thực hiện khảo sát</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát hoạt động đoàn hội</h5>
-                                                    <p class="card-text">Thời gian: 25/01/2024 - 10/02/2024</p>
-                                                    <div class="text-right">
-                                                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                                                            data-target="#surveyModal6">Thực hiện khảo sát</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Phân trang -->
-                                    <div class="d-flex justify-content-end mt-4">
-                                        <nav aria-label="Page navigation">
-                                            <ul class="pagination">
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Previous">
-                                                        <span aria-hidden="true">«</span>
-                                                    </a>
-                                                </li>
-                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#" aria-label="Next">
-                                                        <span aria-hidden="true">»</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Modal Popups -->
-                            <div class="modal fade" id="surveyModal1" tabindex="-1" role="dialog"
-                                aria-labelledby="surveyModalLabel1" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="surveyModalLabel1">Khảo sát chất lượng giảng dạy
-                                                học kỳ 1</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
-                                            <form>
-                                                <!-- Câu hỏi chọn 1 đáp án -->
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-
-
-                                                <!-- Câu hỏi chọn nhiều đáp án -->
-                                                <div class="form-group">
-                                                    <label>2. Những yếu tố nào cần cải thiện? (có thể chọn
-                                                        nhiều)</label>
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="q2a">
-                                                        <label class="custom-control-label" for="q2a">Phương pháp giảng
-                                                            dạy</label>
-                                                    </div>
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="q2b">
-                                                        <label class="custom-control-label" for="q2b">Tài liệu học
-                                                            tập</label>
-                                                    </div>
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="q2c">
-                                                        <label class="custom-control-label" for="q2c">Thời gian giảng
-                                                            dạy</label>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Câu hỏi điền đáp án -->
-                                                <div class="form-group">
-                                                    <label>3. Góp ý của bạn về việc cải thiện chất lượng giảng
-                                                        dạy:</label>
-                                                    <textarea class="form-control" rows="3"></textarea>
-                                                </div>
-
-                                                <!-- Câu hỏi select option -->
-                                                <div class="form-group">
-                                                    <label>4. Đánh giá mức độ khó của môn học:</label>
-                                                    <select class="form-control">
-                                                        <option>Rất dễ</option>
-                                                        <option>Dễ</option>
-                                                        <option>Trung bình</option>
-                                                        <option>Khó</option>
-                                                        <option>Rất khó</option>
-                                                    </select>
-                                                </div>
-
-                                                <style>
-                                                    .rating {
-                                                        display: flex;
-                                                        flex-direction: row-reverse;
-                                                        justify-content: center;
-                                                    }
-
-                                                    .rating input {
-                                                        display: none;
-                                                    }
-
-                                                    .rating label {
-                                                        cursor: pointer;
-                                                        font-size: 50px;
-                                                        color: #ddd;
-                                                        padding: 5px;
-                                                    }
-
-                                                    .rating input:checked~label {
-                                                        color: #ffd700;
-                                                    }
-
-                                                    .rating label:hover,
-                                                    .rating label:hover~label {
-                                                        color: #ffd700;
-                                                    }
-
-                                                    @media (min-width: 1024px) {
-                                                        .rating label {
-                                                            pointer-events: auto !important;
-                                                        }
-                                                    }
-                                                </style>
-
-                                                <div class="form-group rating">
-                                                    <label>
-                                                        <input type="radio" name="rating" value="5" />
-                                                        ★
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="rating" value="4" />
-                                                        ★
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="rating" value="3" />
-                                                        ★
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="rating" value="2" />
-                                                        ★
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="rating" value="1" />
-                                                        ★
-                                                    </label>
-                                                </div>
-                                                <div id="comment-box" class="form-group">
-                                                    <label for="feedback">Hãy chia sẻ ý kiến của bạn: "có thể để
-                                                        trống"</label>
-                                                    <textarea id="feedback" name="feedback" class="form-control"
-                                                        placeholder="Nhập ý kiến của bạn..."></textarea>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Đóng</button>
-                                            <button type="button" class="btn btn-primary">Gửi khảo sát</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function () {
-                                    const ratingInputs = document.querySelectorAll('.rating input');
-                                    const ratingLabels = document.querySelectorAll('.rating label');
-
-                                    ratingInputs.forEach((input, index) => {
-                                        input.addEventListener('change', function () {
-                                            // Xóa màu của tất cả các sao
-                                            ratingLabels.forEach(label => {
-                                                label.style.color = '#ddd';
-                                            });
-
-                                            // Tô màu các sao từ sao được chọn trở về
-                                            for (let i = 4; i >= index; i--) {
-                                                ratingLabels[i].style.color = '#ffd700';
-                                            }
-                                        });
-                                    });
-                                });
-                            </script>
-
-                            <!-- Tương tự cho các modal khác (surveyModal2 đến surveyModal6) với nội dung phù hợp -->
-
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-
 
         <footer class="main-footer">
             <strong>Trường Đại học Kỹ thuật - Công nghệ Cần Thơ &copy; since 2013 <a
