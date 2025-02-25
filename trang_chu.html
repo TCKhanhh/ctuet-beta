@@ -68,9 +68,10 @@
 </head>
 
 <body class="sidebar-mini">
+
     <div class="wrapper">
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light text-sm">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light text-sm fixed-top">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -111,9 +112,8 @@
         </nav>
 
 
-        <!-- {{-- @extends('admin.main') --}} -->
-
-        <aside class="main-sidebar sidebar-dark-primary elevation-0">
+        <aside class="main-sidebar sidebar-dark-primary elevation-0 fixed-top"
+            style="position: fixed; height: 100vh; overflow-y: auto;">
             <!-- Brand Logo -->
             <a href="index.html" class="brand-link">
                 <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/12/Artboard-3.png" alt="logo CTUT"
@@ -240,39 +240,35 @@
                                 <p>Cài đặt tài khoản</p>
                             </a>
                         </li>
-
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link text-danger">
-                                <i class="nav-icon fas fa-sign-out-alt"></i>
-                                <p>Đăng xuất</p>
-                            </a>
-                        </li> -->
                     </ul>
                 </nav>
-
             </div>
 
         </aside>
-
         <script src="/template/admin/plugins/jquery/jquery.min.js"></script>
 
 
-        <div class="content-wrapper" style="min-height: 1302.12px;">
+        <div class="content-wrapper" style="min-height: 1302.12px; margin-top: 46px;">
+
             <section class="content">
                 <div class="container-fluid">
-
-
-                    <div class="content-header" style="height: fit-content;padding:0;margin-right:10px;margin-bottom:0">
+                    <div class="content-header"
+                        style="height: fit-content;padding:0;margin-right:10px;margin-bottom:0px">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h1 class="m-0">Dashboard</h1>
-                            </div><!-- /.col -->
+                                <ol class="breadcrumb float-sm-left">
+                                    <li class="breadcrumb-item"><a href="index.html">Trang chủ </a></li>
+                                    <li class="breadcrumb-item" id='level1'>Danh mục Khoa</li>
+                                    <li class="breadcrumb-item active" id='level2'>Tất cả khảo sát</li>
+                                </ol>
+                                <!-- <h1 class="m-0">Dashboard</h1> -->
+                            </div>
                             <div class="col-sm-6">
-                                <ol class="breadcrumb float-sm-right">
+                                <!-- <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="#">Trang chủ </a></li>
                                     <li class="breadcrumb-item" id='level1'></li>
                                     <li class="breadcrumb-item active" id='level2'></li>
-                                </ol>
+                                </ol> -->
                             </div><!-- /.col -->
                         </div><!-- /.row -->
 
@@ -284,16 +280,18 @@
                             <!-- Danh sách khảo sát -->
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Danh sách khảo sát</h3>
+                                    <h3 class="card-title">Danh sách phiếu khảo sát</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát chất lượng giảng dạy học kỳ 1</h5>
-                                                    <p class="card-text">Thời gian: 01/01/2024 - 15/01/2024</p>
-                                                    <div class="text-right">
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát ý kiến về chương trình tuyển sinh</h5>
+                                                    <p class="card-text">Thời gian: 25/02/2025 - 28/03/2024</p>
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal1">Thực hiện khảo sát</a>
                                                     </div>
@@ -301,11 +299,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát cơ sở vật chất phòng học</h5>
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát về thông tin tuyển sinh</h5>
                                                     <p class="card-text">Thời gian: 05/01/2024 - 20/01/2024</p>
-                                                    <div class="text-right">
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal2">Thực hiện khảo sát</a>
                                                     </div>
@@ -313,11 +313,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát hoạt động ngoại khóa</h5>
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát về ngành học và chuyên ngành</h5>
                                                     <p class="card-text">Thời gian: 10/01/2024 - 25/01/2024</p>
-                                                    <div class="text-right">
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal3">Thực hiện khảo sát</a>
                                                     </div>
@@ -325,11 +327,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát dịch vụ thư viện</h5>
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát về học phí và học bổng</h5>
                                                     <p class="card-text">Thời gian: 15/01/2024 - 30/01/2024</p>
-                                                    <div class="text-right">
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal4">Thực hiện khảo sát</a>
                                                     </div>
@@ -337,11 +341,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát chất lượng căng tin</h5>
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát về cơ sở vật chất phục vụ đào tạo</h5>
                                                     <p class="card-text">Thời gian: 20/01/2024 - 05/02/2024</p>
-                                                    <div class="text-right">
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal5">Thực hiện khảo sát</a>
                                                     </div>
@@ -349,11 +355,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Khảo sát hoạt động đoàn hội</h5>
+                                            <div class="card h-100">
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="card-title"
+                                                        style="height: 48px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                                        Khảo sát về hoạt động ngoại khóa và đời sống sinh viên</h5>
                                                     <p class="card-text">Thời gian: 25/01/2024 - 10/02/2024</p>
-                                                    <div class="text-right">
+                                                    <div class="text-right mt-auto">
                                                         <a href="#" class="btn btn-primary" data-toggle="modal"
                                                             data-target="#surveyModal6">Thực hiện khảo sát</a>
                                                     </div>
@@ -389,8 +397,8 @@
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="surveyModalLabel1">Khảo sát chất lượng giảng dạy
-                                                học kỳ 1</h5>
+                                            <h5 class="modal-title" id="surveyModalLabel1">Khảo sát ý kiến về chương
+                                                trình tuyển sinh</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">×</span>
                                             </button>
@@ -399,146 +407,200 @@
                                             <form>
                                                 <!-- Câu hỏi chọn 1 đáp án -->
                                                 <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
+                                                    <label>1. Bạn đánh giá như thế nào về thông tin tuyển sinh của
+                                                        trường?</label>
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="q1a" name="question1"
                                                             class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
+                                                        <label class="custom-control-label" for="q1a">Rất đầy đủ và hữu
+                                                            ích</label>
                                                     </div>
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="q1b" name="question1"
                                                             class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
+                                                        <label class="custom-control-label" for="q1b">Đầy đủ</label>
                                                     </div>
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="q1c" name="question1"
                                                             class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>1. Mức độ hài lòng của bạn về chất lượng giảng dạy?</label>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1a" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1a">Rất hài
-                                                            lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1b" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1b">Hài lòng</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="q1c" name="question1"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="q1c">Không hài
-                                                            lòng</label>
+                                                        <label class="custom-control-label" for="q1c">Chưa đầy
+                                                            đủ</label>
                                                     </div>
                                                 </div>
 
-
-                                                <!-- Câu hỏi chọn nhiều đáp án -->
                                                 <div class="form-group">
-                                                    <label>2. Những yếu tố nào cần cải thiện? (có thể chọn
-                                                        nhiều)</label>
+                                                    <label>2. Bạn biết đến thông tin tuyển sinh của trường qua kênh
+                                                        nào?</label>
+                                                    <select class="form-control">
+                                                        <option>Website trường</option>
+                                                        <option>Mạng xã hội</option>
+                                                        <option>Báo chí</option>
+                                                        <option>Bạn bè giới thiệu</option>
+                                                        <option>Khác</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>3. Bạn quan tâm đến những thông tin nào về tuyển sinh? (có
+                                                        thể chọn nhiều)</label>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="q2a">
-                                                        <label class="custom-control-label" for="q2a">Phương pháp giảng
-                                                            dạy</label>
+                                                        <label class="custom-control-label" for="q2a">Điểm chuẩn các
+                                                            năm</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="q2b">
-                                                        <label class="custom-control-label" for="q2b">Tài liệu học
-                                                            tập</label>
+                                                        <label class="custom-control-label" for="q2b">Chương trình đào
+                                                            tạo</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="q2c">
-                                                        <label class="custom-control-label" for="q2c">Thời gian giảng
-                                                            dạy</label>
+                                                        <label class="custom-control-label" for="q2c">Cơ hội việc
+                                                            làm</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q2d">
+                                                        <label class="custom-control-label" for="q2d">Học phí và học
+                                                            bổng</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q2e">
+                                                        <label class="custom-control-label" for="q2e">Cơ sở vật
+                                                            chất</label>
                                                     </div>
                                                 </div>
 
-                                                <!-- Câu hỏi điền đáp án -->
                                                 <div class="form-group">
-                                                    <label>3. Góp ý của bạn về việc cải thiện chất lượng giảng
-                                                        dạy:</label>
+                                                    <label>4. Mức độ quan tâm của bạn đối với ngành học tại
+                                                        trường?</label>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q6a" name="question6"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q6a">Rất quan
+                                                            tâm</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q6b" name="question6"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q6b">Quan tâm</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q6c" name="question6"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q6c">Bình
+                                                            thường</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q6d" name="question6"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q6d">Không quan
+                                                            tâm</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>5. Ngành học bạn quan tâm nhất tại trường là gì?</label>
+                                                    <select class="form-control">
+                                                        <option>Công nghệ thông tin</option>
+                                                        <option>Điện - Điển tử - Viễn Thông</option>
+                                                        <option>Kỹ thuật Cơ khí</option>
+                                                        <option>Kỹ thuật Xây dựng</option>
+                                                        <option>Kinh tế - Quản lý công nghiệp</option>
+                                                        <option>CNSH - CNHH - CNTP</option>
+                                                        <option>Khoa học Xã hội</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>6. Theo bạn, thời gian nào là phù hợp nhất để tổ chức các
+                                                        buổi tư vấn tuyển sinh?</label>
+                                                    <select class="form-control">
+                                                        <option>Đầu học kỳ 2 lớp 12</option>
+                                                        <option>Giữa học kỳ 2 lớp 12</option>
+                                                        <option>Sau kỳ thi THPT</option>
+                                                        <option>Trước thời điểm đăng ký nguyện vọng</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>7. Mức độ hài lòng của bạn về quy trình đăng ký xét tuyển
+                                                        trực tuyến?</label>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q5a" name="question5"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q5a">Rất hài
+                                                            lòng</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q5b" name="question5"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q5b">Hài lòng</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q5c" name="question5"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q5c">Bình
+                                                            thường</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q5d" name="question5"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q5d">Không hài
+                                                            lòng</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>8. Bạn có gặp khó khăn gì trong quá trình tìm hiểu thông tin tuyển sinh không?</label>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q8a" name="question8"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q8a">Không có khó khăn gì</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q8b" name="question8"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q8b">Thông tin chưa rõ ràng</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q8c" name="question8"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q8c">Khó tìm thông tin</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="q8d" name="question8"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label" for="q8d">Thông tin không cập nhật</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>9. Bạn mong đợi điều gì nhất khi theo học tại trường?</label>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q9a">
+                                                        <label class="custom-control-label" for="q9a">Chất lượng đào tạo tốt</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q9b">
+                                                        <label class="custom-control-label" for="q9b">Cơ hội thực tập/việc làm</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q9c">
+                                                        <label class="custom-control-label" for="q9c">Môi trường học tập năng động</label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="q9d">
+                                                        <label class="custom-control-label" for="q9d">Học phí phù hợp</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>10. Bạn có đề xuất gì để cải thiện công tác tuyển sinh của
+                                                        trường?</label>
                                                     <textarea class="form-control" rows="3"></textarea>
                                                 </div>
 
-                                                <!-- Câu hỏi select option -->
-                                                <div class="form-group">
-                                                    <label>4. Đánh giá mức độ khó của môn học:</label>
-                                                    <select class="form-control">
-                                                        <option>Rất dễ</option>
-                                                        <option>Dễ</option>
-                                                        <option>Trung bình</option>
-                                                        <option>Khó</option>
-                                                        <option>Rất khó</option>
-                                                    </select>
-                                                </div>
+
 
                                                 <style>
                                                     .rating {
@@ -634,23 +696,20 @@
                                 });
                             </script>
 
-                            <!-- Tương tự cho các modal khác (surveyModal2 đến surveyModal6) với nội dung phù hợp -->
-
                         </div>
                     </div>
                 </div>
             </section>
         </div>
 
-
         <footer class="main-footer">
-            <strong>Trường Đại học Kỹ thuật - Công nghệ Cần Thơ &copy; since 2013 <a
-                    href="https://ctuet.edu.vn">CTUT</a>.</strong>
+            <strong>Trường Đại học Kỹ thuật - Công nghệ Cần Thơ &copy;
+                since 2013 <a href="https://ctuet.edu.vn">CTUT</a>.</strong>
             <div class="float-right d-none d-sm-inline-block">
-                <b>Phiên bản</b> 1.0.0 (tháng 06/2024)
+                <b>Phiên bản</b> 1.0.0 (tháng 02/2025)
             </div>
         </footer>
-        <!-- {{-- <div id="sidebar-overlay"></div> --}} -->
+        <!-- <div id="sidebar-overlay"></div>  -->
 
         <!-- jQuery -->
         <script src="/template/admin/plugins/jquery/jquery.min.js"></script>
